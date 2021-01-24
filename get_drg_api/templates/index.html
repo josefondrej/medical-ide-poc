@@ -12,23 +12,43 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="apple-touch-icon" href="../../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../static/css/normalize.css">
+  <link rel="stylesheet" href="../static/css/main.css">
+  <link rel="stylesheet" href="../static/css/style.css">
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://cdn.tiny.cloud/1/dcqz7s3xogd64vsdsysjams8e36smzdcfal8guq1mnuv97rk/tinymce/5/tinymce.min.js"
           referrerpolicy="origin"></script>
-  <script src="js/get_drg.js"></script>
+  <script src="../static/js/get_drg.js"></script>
 
 </head>
 
 <body style="text-align: center">
 <div class="editor">
+  <div class="examples">
+
+    <h1>Medical IDE Demo</h1>
+    <p class="description">Try typing some of the phrases below in the text box.</p>
+    <hr>
+    <p>
+      Andere Verbrennungen mit Hauttransplantation oder bestimmtem Eingriff <span class="hint_code">Y02C</span><br>
+      Sepsis oder Komplexbehandlung bei MRE ab 7 Behandlungstage, Alter < 10 Jahre <span
+      class="hint_code">T60D</span><br>
+      Andere Eingriffe an der Wirbelsäule oder Halotraktion mit äusserst schweren CC oder bestimmtem
+      Kombinationseingriff oder Eingriff an mehreren Lokalisationen <span class="hint_code">I10A</span><br>
+      Andere Infektionen und Entzündungen der Atmungsorgane mit komplexer Diagnose oder äusserst schwere CC, Alter < 16
+      Jahre, mehr als ein Belegungstag <span class="hint_code">E77B</span><br>
+      Komplementärmedizinische Komplexbehandlung bei bestimmten Krankheiten, ohne OR-Prozedur, ab 10 Therapieeinheiten
+      <span class="hint_code">A96B</span><br>
+    <p class="description">... or any other phrase from the <a
+      href="https://www.swissdrg.org/application/files/2516/0759/5243/SwissDRG-Version_10.0_Fallpauschalenkatalog_AV_2021_2021.pdf">Swiss
+      DRG</a> catalogue.</p>
+    </p>
+  </div>
   <textarea></textarea>
   <div class="dashboard">
     DRG: <span class="box" id="drgCode">?</span>
@@ -48,13 +68,13 @@
     toolbar_mode: 'floating',
     tinycomments_mode: 'embedded',
     tinycomments_author: 'Author name',
-    height: "65vh",
+    height: "40vh",
   });
 </script>
 
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="../static/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="../static/js/plugins.js"></script>
+<script src="../static/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

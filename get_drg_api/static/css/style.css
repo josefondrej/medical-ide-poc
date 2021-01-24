@@ -1,0 +1,62 @@
+.editor {
+  margin: auto;
+  width: 65vw;
+  height: 50vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.dashboard {
+  text-align: left;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  line-height: 3em;
+}
+
+.box {
+  width: 1vw;
+  margin-left: 1em;
+  padding: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.5vh;
+  background-color: #e7e5e5;
+}
+
+.examples {
+  color: gray;
+  text-align: left;
+  font-size: 10pt;
+  font-style: italic;
+  line-height: 200%;
+  padding-bottom: 3vh;
+}
+
+.hint_code {
+  background-color: #e7e5e5;
+  border-radius: 5pt;
+  padding: 2pt;
+  padding-left: 4pt;
+  padding-right: 4pt;
+  margin-left: 5pt;
+  color: black;
+}
+
+.examples h1 {
+  font-size: 20pt;
+  color: black;
+  font-style: normal;
+}
+
+.description {
+  color: black;
+  font-style: normal;
+}
+
+.description a {
+  color: #00a1d2;
+}

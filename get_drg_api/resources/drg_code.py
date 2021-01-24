@@ -1,3 +1,6 @@
+import json
+
+from flask import request
 from flask_restful import reqparse, Resource
 
 from get_drg_api.text_to_code import text_to_code
@@ -12,7 +15,8 @@ class DRGCode(Resource):
                       )
 
   def post(self):
-    data = DRGCode.parser.parse_args()
-    code, distance = text_to_code(data["text"])
-
-    return {"code": code, "distance": distance}, 200
+    raw_text = str(request.data, "utf-8")
+    text = json.loads(raw_text)["text"]
+    code, distance = text_to_code(text)
+    result = {"code": code, "distance": distance}, 200
+    return result
