@@ -6,7 +6,7 @@ function editorChangeHandler(ed) {
   if (contentLen > 30) {
     var request = new XMLHttpRequest()
 
-    request.open('POST', 'http://0.0.0.0:5001/text/', true)
+    request.open('POST', 'http://64.225.96.72:5001/text/', true)
     // request.setRequestHeader("Content-Type", "application/json");
 
     request.onreadystatechange = function () {
